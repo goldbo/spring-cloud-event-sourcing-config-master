@@ -11,13 +11,13 @@ spring:
 spring:
   profiles: development
   redis:
-    host: 192.168.99.100
-    port: 6379
+    host: localhost
+    port: 6980
   datasource:
-    url: jdbc:mysql://192.168.99.100:3306/dev?useSSL=false
-    username: root
-    password: dbpass
-    initialize: false
+    url: jdbc:mysql://localhost:3306/dev?useSSL=false
+    username: goldbo
+    password: 123456
+    initialize: true
 eureka:
   instance:
     prefer-ip-address: true
